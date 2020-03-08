@@ -283,7 +283,7 @@ func parseObject(key string) (release, error) {
 			platform: match[2],
 			version:  version,
 			url:      fmt.Sprintf("
-https://bestbefore.oss-cn-hangzhou.aliyuncs.com/%s/node/%s/%s/node-v%s-%s.tar.gz", "heroku-nodebin", match[1], match[2], match[3], match[2]),
+http://bestbefore.oss-cn-hangzhou.aliyuncs.com/%s/node/%s/%s/node-v%s-%s.tar.gz", "heroku-nodebin", match[1], match[2], match[3], match[2]),
 		}, nil
 	}
 
@@ -298,7 +298,7 @@ https://bestbefore.oss-cn-hangzhou.aliyuncs.com/%s/node/%s/%s/node-v%s-%s.tar.gz
 			stage:    match[1],
 			platform: "",
 			url:      fmt.Sprintf("
-https://bestbefore.oss-cn-hangzhou.aliyuncs.com/heroku-nodebin/yarn/release/yarn-v%s.tar.gz", version),
+http://bestbefore.oss-cn-hangzhou.aliyuncs.com/heroku-nodebin/yarn/release/yarn-v%s.tar.gz", version),
 			version:  version,
 		}, nil
 	}
